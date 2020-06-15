@@ -19,7 +19,7 @@ def tranque(env):
 
 # Creamos nuestro Entorno
 env = simpy.Environment()
-# Lo agregamos la función de semaforo, al Proceso del Entorno
+# Lo agregamos la función de tranque, al Proceso del Entorno
 env.process(tranque(env))
-# Ejecutamos agregando el tiempo de 15 Segundo
+# Ejecutamos agregando el tiempo de 6 
 env.run(until=6)
